@@ -2,8 +2,8 @@
 ## A study project that simulates a weather forecast page. I hope you enjoy!  :grin:
 
 <div align="center">
-  <img src="./assets/gifs/gif1.gif" alt="demo-web" height="350">
-  <img src="./assets/gifs/gif2.gif" alt="demo-web" height="430">
+  <img src="./assets/gifs/gif1.gif" alt="demo-web" height="470">
+  <img src="./assets/gifs/gif2.gif" alt="demo-web" height="470">
 </div>
 <br><br>
 
