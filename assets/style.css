@@ -11,10 +11,12 @@ body, main{
   height: 100vh;
   width: 100%;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 main h1{
-  border-bottom: 10px solid rgb(54, 54, 54);
+  color: rgb(80, 80, 80);
+  border-bottom: 10px solid rgb(80, 80, 80);
   border-radius: 8px;
 }
 
@@ -92,6 +94,7 @@ form{
   color: white;
   font-size: 50px;
   flex-direction: column;
+  box-shadow: 0 0 60px black;
 }
 
 .modal-text button {
@@ -111,6 +114,7 @@ form{
   opacity: 1;
   pointer-events: auto;
   left: 0;
+  z-index: 9;
 }
 
 .local {
@@ -120,12 +124,12 @@ form{
 
 .img-container{
   position: absolute;
-  bottom: 50px;
+  bottom: 400px;
 }
 
 .show-weather{
 position: absolute;
-bottom: 250px;
+bottom: 200px;
 }
 
 .greets{
@@ -139,4 +143,33 @@ bottom: 250px;
   right: 30%;
   font-size: 30px;
   color: rgba(255, 255, 255, 0.787);
+}
+
+footer{
+  font-size: 30px;
+  color: rgb(80, 80, 80);
+}
+.btn-success{
+  position: relative;
+}
+.btn-success a{
+  position: relative;
+  z-index: 1;
+
+}
+
+.btn-success::after{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #3b2ddb;
+  transition: 0.2s;
+  border-radius: 4px;
+}
+
+.btn-success:hover::after{
+  width: 100%;
 }
