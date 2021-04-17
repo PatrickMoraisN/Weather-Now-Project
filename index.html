@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets-boots/css/bootstrap.min.css">
   <link rel="stylesheet" href="./assets/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+   integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
   <title>Consulte o tempo</title>
 </head>
 
@@ -18,10 +21,17 @@
     <div class="text-container">
       <form class="form-floating mb-3 form-container">
         <input type="text" class="form-control cep" id="floatingInput" placeholder="cep ou localidade">
-        <label for="floatingInput">Cep ou Localidade</label>
+        <label for="floatingInput" id="cep-local">Cep ou Localidade</label>
         <p class="check-input"></p>
         <button type="button" class="btn btn-success"><a>Consultar!</a></button>
       </form>
+    </div>
+    <div class="dark-container">
+      <i class="fas fa-sun"></i><div class="form-check form-switch">
+        <input class="form-check-input dark" type="checkbox" id="flexSwitchCheckDefault">
+        <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+      </div>
+      <i class="fas fa-moon"></i>
     </div>
     <footer>Desenvolvido com ♥ e café por Patrick!</footer>
   </main>
@@ -42,7 +52,7 @@
   </div>
 
   <script src="./assets-boots/js/bootstrap.min.js"></script>
-  <script src="./assets/list.js"></script>
+  <script src="./assets/darkm.js"></script>
   <script src="./assets/script.js"></script>
 </body>
 
