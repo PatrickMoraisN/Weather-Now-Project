@@ -5,29 +5,34 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets-boots/css/bootstrap.min.css">
   <link rel="stylesheet" href="./assets/style.css">
   <title>Consulte o tempo</title>
 </head>
 
 <body>
 
-  <section>
+  <main class="main">
     <div class="text-container">
-      <h1>Olá, consulte o tempo de onde vc está!</h1>
-      <form action="">
-        <label for="cep">
-          <input type="text" name="cep" id="cep" placeholder="CEP">
-        </label>
+      <form class="form-floating mb-3 form-container">
+        <input type="text" class="form-control cep" id="floatingInput" placeholder="cep ou localidade">
+        <label for="floatingInput">Cep ou Localidade</label>
+        <p class="check-input"></p>
+        <button type="button" class="btn btn-success">Success</button>
       </form>
     </div>
+  </main>
 
-    <div class="result-container">
-
+  <div class="modal-container">
+    <div class="modal-text">
+      <p class="tempe">A temperatura eh <span class="temp-fate"></span></p>
+      <p>O clima eh <span class="clima"></span></p>
     </div>
-  </section>
+  </div>
 
-  <script src="./assets/script.js"></script>
+  <script src="./assets-boots/js/bootstrap.min.js"></script>
   <script src="./assets/list.js"></script>
+  <script src="./assets/script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,88 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.text-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 60vh;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#floatingInput{
+  width: 400px;
+}
+
+#floatingInput:focus{
+  box-shadow: 0 0 7px black;
+  transition: 0.5s;
+}
+
+.btn{
+  margin-top: 20px;
+  padding: 15px;
+  width: 200px;
+}
+
+.check-input{
+  color: rgb(129, 3, 3);
+  background-color: rgb(248, 193, 193);
+  font-weight: 600;
+  width: 350px;
+  border-radius: 30px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.modal-container{
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.363);
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-text{
+  height: 900px;
+  width: 700px;
+  background-color: rgb(230, 230, 230);
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0, 0, 0, 0.9) 100%), url('./imgs/rj');
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 50px;
+}
+
+.show-modal {
+  opacity: 1;
+  pointer-events: auto;
+}
