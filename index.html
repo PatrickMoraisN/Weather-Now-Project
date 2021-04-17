@@ -13,12 +13,14 @@
 <body>
 
   <main class="main">
+    <h1>Consulte o clima/tempo com seu CEP ou Localidade!!</h1>
+    <p class="form-text text-h1">Exemplos: 22011010, 22011-010 ou Rio de Janeiro.</p>
     <div class="text-container">
       <form class="form-floating mb-3 form-container">
         <input type="text" class="form-control cep" id="floatingInput" placeholder="cep ou localidade">
         <label for="floatingInput">Cep ou Localidade</label>
         <p class="check-input"></p>
-        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-success">Consultar!</button>
       </form>
     </div>
   </main>
@@ -27,6 +29,7 @@
     <div class="modal-text">
       <p class="tempe">A temperatura eh <span class="temp-fate"></span></p>
       <p>O clima eh <span class="clima"></span></p>
+      <button class="btn btn-danger close-btn">Fechar</button>
     </div>
   </div>
 

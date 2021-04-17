@@ -1,8 +1,10 @@
 const cep = document.querySelector('.cep');
 const btn = document.querySelector('.btn');
+const closeBtn = document.querySelector('.close-btn');
 const checkInputP = document.querySelector('.check-input');
 const tempElem = document.querySelector('.temp-fate');
-const modal = document.querySelector('.modal-container')
+const modalText = document.querySelector('.modal-text');
+const modal = document.querySelector('.modal-container');
 const climaElem = document.querySelector('.clima');
 const apiWeather = {
   key: '61ef00c8825fd4245bfd38468e696a37',
@@ -50,9 +52,12 @@ const findCep = async () => {
   } else if (!cep.value) {
     checkInput()
   } else {
-    getWeather(cep.value)
+    getWeather(cep.value);
     openModal();
   }
 };
 
 btn.addEventListener('click', findCep);
+closeBtn.addEventListener('click', () => {
+  modal.classList.remove('show-modal')
+})
