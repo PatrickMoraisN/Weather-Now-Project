@@ -23,6 +23,9 @@ This project was developed with the following technologies: <br><br>
 The idea about this project is: 
 - Create a simple page with dark mode toggle.<br>
 - Generate random greets.<br>
+- Consult local weather<br>
+  - Cep
+  - Cities
 ---
 <br>
 
