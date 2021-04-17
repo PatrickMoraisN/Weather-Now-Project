@@ -102,8 +102,41 @@ form{
   border-radius: 13px;
 }
 
+.icon{
+  width: 250px;
+  height: 250px;
+}
+
 .show-modal {
   opacity: 1;
   pointer-events: auto;
   left: 0;
+}
+
+.local {
+  text-shadow: 0 0 3px white;
+  border-bottom: 5px solid rgba(255, 255, 255, 0.308);
+}
+
+.img-container{
+  position: absolute;
+  bottom: 50px;
+}
+
+.show-weather{
+position: absolute;
+bottom: 250px;
+}
+
+.greets{
+  position: absolute;
+  top: 20px;
+}
+
+.small-phrase{
+  position: absolute;
+  top: 150px;
+  right: 30%;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.787);
 }
