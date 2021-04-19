@@ -17,7 +17,7 @@ const darkMode = () => {
   h1.style.color = 'rgb(230, 230, 230)';
   h1.style.borderBottom = '10px solid rgb(180, 180, 180)'
   textH1.style.color = 'rgb(200, 200, 200)'
-  cepLocal.style.color = 'rgb(130, 130, 130)'
+  cepLocal.style.color = 'black'
   footer.style.color = 'rgb(180, 180, 180)'
 }
 

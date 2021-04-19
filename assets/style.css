@@ -41,13 +41,25 @@ form{
   align-items: center;
 }
 
+span{
+  transition: 0.1s;
+  display: inline-block;
+  min-width: 5px;
+}
+
+.cep:focus + label span{
+  top: 0px;
+  transition: 0.1s;
+  transform: translateY(-15px);
+}
+
 #floatingInput{
   width: 400px;
 }
 
 #floatingInput:focus{
   box-shadow: 0 0 7px black;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .btn{

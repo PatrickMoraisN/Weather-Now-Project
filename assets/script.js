@@ -10,11 +10,19 @@ const imgIcon = document.querySelector('.icon')
 const citySpan = document.querySelector('.local');
 const greetsSpan = document.querySelector('.greet');
 const smallPhrase = document.querySelector('.small-phrase');
+const label = document.querySelector('#cep-local');
 const apiWeather = {
   key: '61ef00c8825fd4245bfd38468e696a37',
   unit: 'metric',
   lang: 'pt_br',
 }
+
+
+
+label.innerHTML = label.innerText.split('')
+  .map((letter, id) => `<span style="transition-delay:${id*0.03}s">${letter}</span>`)
+  .join('');
+
 
 const randomPhrase = () => {
   const phrases = [
